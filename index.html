@@ -231,8 +231,8 @@
 			})();
 		</script>
 
-		<script type="module" crossorigin="" src="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.67/assets/index-zCAkFsQu.js"></script>
-		<link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.67/assets/index-CyqhDp8-.css">
+		<script type="module" crossorigin="" src="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.68/assets/index-DTtS0HLw.js"></script>
+		<link rel="stylesheet" crossorigin="" href="https://z-cdn.chatglm.cn/z-ai/frontend/prod-fe-1.1.68/assets/index-CyqhDp8-.css">
 	<title>Z.AI Share</title><meta name="description" content="Amazing content sharing from Z.AI"><meta property="og:type" content="website"><meta property="og:site_name" content="Z.AI"><meta property="og:title" content="Z.AI Share"><meta property="og:description" content="Amazing content sharing from Z.AI"><meta property="og:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta property="og:image:alt" content="Z.AI Share"><meta property="og:image:width" content="400"><meta property="og:image:height" content="400"><meta property="og:image:type" content="image/png"><meta property="og:url" content="http://chat.z.ai/space/g1sfp56h11k1-art"><meta property="article:author" content="Z.AI"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="Z.AI Share"><meta name="twitter:description" content="Amazing content sharing from Z.AI"><meta name="twitter:image" content="https://z-cdn.chatglm.cn/z-ai/static/share-logo.png"><meta name="twitter:image:alt" content="Z.AI Share"><meta name="robots" content="index,follow"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="application-name" content="Z.AI"><meta name="theme-color" content="#1976d2"><meta name="msapplication-TileColor" content="#1976d2"><link rel="canonical" href="http://chat.z.ai/space/g1sfp56h11k1-art"><script src="https://res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
 <script>
 (function() {
@@ -243,9 +243,9 @@
   console.log('[WeChat-Frontend-' + frontendCallId + '] 签名配置:', {
     debug: false,
     appId: 'wxa5796e47c57570b1',
-    timestamp: 1782698672,
-    nonceStr: 'FYTN9uNiP1T1QZja',
-    signature: 'ad01948505e2a779bb62c9a89ad1ccc6dcf1f3d3',
+    timestamp: 1782741382,
+    nonceStr: 'rza2EzmooG1yItZh',
+    signature: '2abce989f7d1dc3ff7b86fed69f2cdce050235dd',
     jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"]
   });
 
@@ -253,9 +253,9 @@
   wx.config({
     debug: false, // 根据环境变量设置debug模式
     appId: 'wxa5796e47c57570b1', // 公众号的唯一标识
-    timestamp: 1782698672, // 生成签名的时间戳
-    nonceStr: 'FYTN9uNiP1T1QZja', // 生成签名的随机串
-    signature: 'ad01948505e2a779bb62c9a89ad1ccc6dcf1f3d3', // 签名
+    timestamp: 1782741382, // 生成签名的时间戳
+    nonceStr: 'rza2EzmooG1yItZh', // 生成签名的随机串
+    signature: '2abce989f7d1dc3ff7b86fed69f2cdce050235dd', // 签名
     jsApiList: ["updateAppMessageShareData","updateTimelineShareData","onMenuShareAppMessage","onMenuShareTimeline"] // 需要使用的JS接口列表
   });
 
@@ -405,16 +405,22 @@
 				}
 			};
 
+			var sessionFetch = fetch(`${base}/api/v1/auths/`, config).then(async (res) => {
+				if (!res.ok) throw await res.json();
+				return res.json();
+			});
+
 			window.GLOBAL_FETCHES = {
-				session: fetch(`${base}/api/v1/auths/`, config).then(async (res) => {
-					if (!res.ok) throw await res.json();
-					return res.json();
-				}),
+				session: sessionFetch,
 				config: fetch(`${base}/api/config`, config).then(async (res) => {
 					if (!res.ok) throw await res.json();
 					return res.json();
 				}),
-				models: token && fetch(`${base}/api/models`, config),
+				// token 存在时与其他请求并行；不存在时需等 session 之后再请求 models
+				// 至少要 cookie 里有 token 才能正常请求 models
+				models: token
+					? fetch(`${base}/api/models`, config)
+					: sessionFetch.then(() => fetch(`${base}/api/models`, config)),
 				settings:
 					token &&
 					fetch(`${base}/api/v1/users/user/settings`, config).then(async (res) => {
