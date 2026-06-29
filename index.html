@@ -1,50 +1,98 @@
-<!doctype html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-        <meta name="theme-color" content="#F4F6F8" />
-        <meta name="referrer" content="no-referrer" />
-        <meta name="description" content="Assistente de IA avançado" />
-        <meta name="keywords" content="IA, chatbot, assistente, inteligência artificial" />
-        <title>AI Chat</title>
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason } = require('@whiskeysockets/baileys');
+const { OpenAI } = require('openai');
+const P = require('pino');
+const fs = require('fs');
+const path = require('path');
 
-        <script>
-            const initTheme = () => {
-                const metaThemeColorTag = document.querySelector('meta[name="theme-color"]');
-                const prefersTheme = 'light';
+// CONFIGURAÇÃO DA OPENAI (NÃO COMPARTILHE ESTA CHAVE NO HTML)
+const openai = new OpenAI({
+  apiKey: "SUA_CHAVE_DA_OPENAI_AQUI" // <-- Você coloca sua chave aqui no servidor
+});
 
-                if (!localStorage?.theme) {
-                    localStorage.theme = prefersTheme;
-                }
+// PERSONA DO ROBÔ (Técnicas de Vendas e Conversão)
+const systemPrompt = `
+Você é a Assistente Virtual da 'Estética Pro', empresa que cria sites profissionais e sistemas de agendamento para Esteticistas e Clínicas de Estética.
+Seu objetivo é converter o lead em cliente (fechar a venda do plano de R$ 130/mês).
+Seja sempre educada, empática e use técnicas de vendas SPIN ou Gatilhos Mentais.
+Destaque que o plano não tem fidelidade, inclui hospedagem, domínio, painel de agendamento, controle de estoque e suporte 24h.
+Se o cliente hesitar, ofereça tirar dúvidas. Se ele fechar, peça o número para contato humano ou direcione para o link: https://wa.me/5511957130312.
+Responda sempre em texto, de forma curta e direta.
+`;
 
-                if (localStorage.theme === 'system') {
-                    document.documentElement.classList.add(prefersTheme);
-                    metaThemeColorTag.setAttribute('content', prefersTheme === 'light' ? '#F4F6F8' : '#141618');
-                } else if (localStorage.theme === 'light') {
-                    document.documentElement.classList.add('light');
-                    metaThemeColorTag.setAttribute('content', '#F4F6F8');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    metaThemeColorTag.setAttribute('content', '#141618');
-                }
-            };
-            initTheme();
-        </script>
+async function connectToWhatsApp() {
+    const { state, saveCreds } = await useMultiFileAuthState('auth_info_baileys');
+    const sock = makeWASocket({
+        auth: state,
+        logger: P({ level: 'silent' }),
+    });
 
-        <style>
-            @keyframes pulse {
-                50% {
-                    opacity: 0.65;
-                }
+    sock.ev.on('creds.update', saveCreds);
+
+    sock.ev.on('connection.update', (update) => {
+        const { connection, lastDisconnect, qr } = update;
+        if(qr) {
+            console.log('Escaneie este QR Code no WhatsApp Business:');
+            require('qrcode-terminal').generate(qr, {small: true});
+        }
+        if(connection === 'close') {
+            const shouldReconnect = (lastDisconnect?.error)?.output?.statusCode !== DisconnectReason.loggedOut;
+            if(shouldReconnect) connectToWhatsApp();
+        }
+    });
+
+    sock.ev.on('messages.upsert', async ({ messages }) => {
+        const msg = messages[0];
+        if (!msg.message || msg.key.fromMe) return;
+
+        const sender = msg.key.remoteJid;
+        let userText = "";
+
+        // LÓGICA PARA ECONOMIZAR CRÉDITOS: SE FOR ÁUDIO, TRANSCREVE
+        if (msg.message.audioMessage) {
+            try {
+                // Baixar o áudio
+                const buffer = await sock.downloadMediaMessage(msg);
+                const audioPath = path.resolve(__dirname, 'audio.ogg');
+                fs.writeFileSync(audioPath, buffer);
+
+                // Enviar para OpenAI Whisper (Transcrição - Super barato)
+                const transcription = await openai.audio.transcriptions.create({
+                    file: fs.createReadStream(audioPath),
+                    model: "whisper-1",
+                });
+                userText = transcription.text;
+                console.log("Cliente enviou áudio transcrito:", userText);
+            } catch (err) {
+                console.error("Erro ao processar áudio:", err);
+                await sock.sendMessage(sender, { text: "Desculpe, não consegui escutar seu áudio. Pode digitar?" });
+                return;
             }
-            .animate-pulse-fast {
-                animation: pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-            }
-        </style>
-    </head>
+        } else if (msg.message.conversation) {
+            userText = msg.message.conversation;
+        }
 
-    <body>
-        <div id="app" style="display: contents"></div>
-    </body>
-</html>
+        if (!userText) return;
+
+        // CHAMADA PARA O GPT-4o-mini (Modelo barato e inteligente)
+        try {
+            const completion = await openai.chat.completions.create({
+                model: "gpt-4o-mini", // Mais barato que o GPT-4 padrão e excelente para vendas
+                messages: [
+                    { role: "system", content: systemPrompt },
+                    { role: "user", content: userText }
+                ],
+                temperature: 0.7,
+            });
+
+            const replyText = completion.choices[0].message.content;
+            
+            // RESPONDE NO WHATSAPP EM TEXTO (Economiza créditos de voz)
+            await sock.sendMessage(sender, { text: replyText });
+        } catch (err) {
+            console.error("Erro na OpenAI:", err);
+            await sock.sendMessage(sender, { text: "Ops, estou com uma leve instabilidade no sistema agora. Pode aguardar um segundinho?" });
+        }
+    });
+}
+
+connectToWhatsApp();
