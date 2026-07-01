@@ -1,8 +1,3 @@
-ados) no console e sujando o seu site. Removi todos esses pesos mortos. Também corrigi o link do e-mail no rodapé que estava codificado de forma estranha.
-
-Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substituir com segurança:
-
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -81,7 +76,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
 </head>
 <body class="bg-[#fff0f5] text-slate-800">
 
-    <!-- Navbar -->
     <nav class="fixed top-0 w-full z-40 glass border-b border-pink-200/50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -116,7 +110,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section class="gradient-hero min-h-screen flex items-center pt-20 px-4 relative">
         <div class="blob bg-pink-400 w-96 h-96 rounded-full top-20 left-10"></div>
         <div class="blob bg-rose-300 w-80 h-80 rounded-full bottom-20 right-10" style="animation-delay: -5s;"></div>
@@ -168,12 +161,11 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </section>
 
-    <!-- Para Quem É -->
     <section class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Solução Perfeita Para Você</h2>
-                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Atendemos diferentes perfis de profissionais da beleza e estética</p>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Atendemos diferentes profiles de profissionais da beleza e estética</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg card-hover border border-pink-200">
@@ -204,7 +196,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </section>
 
-    <!-- Planos -->
     <section id="planos" class="py-24 px-4 bg-gradient-to-br from-pink-50 to-rose-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
@@ -270,7 +261,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </section>
 
-    <!-- Serviços -->
     <section id="servicos" class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -353,7 +343,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </section>
 
-    <!-- Agendamento -->
     <section id="agendamento" class="py-24 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12">
@@ -388,7 +377,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </section>
 
-    <!-- ===================== PAINEL ADMIN (MODAL FULLSCREEN) ===================== -->
     <div id="adminOverlay" class="admin-overlay">
         <div class="admin-modal">
             <div style="background:#1e293b; padding: 16px 24px; display:flex; align-items:center; justify-content:space-between; border-bottom: 1px solid #334155; flex-shrink:0;">
@@ -417,7 +405,7 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
                         <p style="color:#475569; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; padding: 0 4px;">CONTA</p>
                         <div class="nav-item" onclick="clearAllData()"><i class="fas fa-trash-alt" style="color:#ef4444;"></i> <span style="color:#ef4444;">Limpar Dados</span></div>
                     </div>
-                    <div style="margin-top:auto; padding-top:24px;">
+                    <div style="margin-top:auto; padding-top:24px; display: none !important;">
                         <div style="background:#1a2744; border-radius:12px; padding:14px; border:1px solid #334155;">
                             <div style="color:#94a3b8; font-size:11px; margin-bottom:6px;"><i class="fas fa-info-circle text-pink-400 mr-1"></i> Plano Ativo</div>
                             <div style="color:#f1f5f9; font-weight:800; font-size:16px;">R$ 130<span style="color:#64748b; font-size:12px;">/mês</span></div>
@@ -427,7 +415,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
                 </div>
 
                 <div class="admin-content" style="padding:24px;">
-                    <!-- DASHBOARD -->
                     <div id="panel-dashboard" class="section-panel active">
                         <h2 style="color:#f1f5f9; font-size:20px; font-weight:800; margin-bottom:6px;">Visão Geral</h2>
                         <p style="color:#64748b; font-size:13px; margin-bottom:24px;">Resumo completo da sua clínica hoje</p>
@@ -483,7 +470,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
                         </div>
                     </div>
 
-                    <!-- AGENDAMENTOS -->
                     <div id="panel-agendamentos" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -511,7 +497,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
                         </div>
                     </div>
 
-                    <!-- FINANCEIRO -->
                     <div id="panel-financeiro" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -578,7 +563,6 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
                         </div>
                     </div>
 
-                    <!-- ESTOQUE -->
                     <div id="panel-estoque" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -623,255 +607,5 @@ Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substi
         </div>
     </div>
 
-    <!-- Toast -->
     <div id="toast" class="fixed top-4 right-4 bg-white rounded-xl shadow-xl px-5 py-3 flex items-center gap-3 translate-x-full transition-transform duration-300 z-[200] border border-slate-100">
-        <i id="toastIcon" class="fas fa-check-circle text-emerald-400"></i>
-        <span id="toastMsg" class="text-sm font-medium text-slate-700"></span>
-    </div>
-
-    <!-- Footer -->
-    <footer class="bg-[#8b0046] text-pink-200 py-12 px-4">
-        <div class="max-w-7xl mx-auto text-center">
-            <div class="flex items-center justify-center gap-3 mb-6">
-                <div class="w-10 h-10 rose-gradient rounded-xl flex items-center justify-center"><svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div>
-                <span class="text-2xl font-bold text-white">Estética<span class="text-pink-300">Pro</span></span>
-            </div>
-            <p class="mb-2 text-lg">Sites Profissionais para Esteticistas e Clínicas de Estética</p>
-            <p class="text-sm mb-6">Dúvidas? Entre em contato pelo nosso WhatsApp.</p>
-            <div class="border-t border-pink-800 pt-6 text-sm">© 2026 Estética Pro. Todos os direitos reservados.</div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Flutuante -->
-    <a href="https://wa.me/5511957130312?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20site%20profissional%20para%20minha%20clínica%20de%20estética" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-all duration-300 pulse-glow" aria-label="WhatsApp">
-        <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
-
-    <script>
-    const PRICE_MAP = { 'Limpeza de Pele Profunda': 120, 'Drenagem Linfática Corporal': 150, 'Massagem Modeladora Redutora': 160, 'Aplicação de Botox (Região)': 350, 'Peeling Químico Renovador': 200, 'Carboxiterapia para Celulite': 180, 'Limpeza de Pele': 120, 'Drenagem Linfática': 150, 'Massagem Modeladora': 160, 'Botox': 350, 'Peeling Químico': 200, 'Carboxiterapia': 180 };
-    function getPriceForService(name) { for (const key in PRICE_MAP) { if (name && name.toLowerCase().includes(key.toLowerCase())) return PRICE_MAP[key]; } return 0; }
-    function formatBRL(v) { return 'R$ ' + parseFloat(v || 0).toLocaleString('pt-BR', {minimumFractionDigits:2, maximumFractionDigits:2}); }
-    function formatarDataBR(dataISO) { const p = dataISO.split('-'); return p[2]+'/'+p[1]+'/'+p[0]; }
-    function formatDateISO(date) { return date.toISOString().split('T')[0]; }
-
-    document.addEventListener('DOMContentLoaded', () => {
-        initHorarios(); initDateValidation(); initDefaultStock(); initDemoData();
-        const d = new Date(); const el = document.getElementById('adminCurrentDate');
-        if (el) el.textContent = d.toLocaleDateString('pt-BR', {weekday:'long', day:'2-digit', month:'long', year:'numeric'});
-    });
-
-    function initDemoData() {
-        let agends = JSON.parse(localStorage.getItem('esteticaPro_agendamentos') || '[]');
-        if (agends.length === 0) {
-            const now = new Date();
-            function getDateStr(monthsAgo, day) { const d = new Date(now.getFullYear(), now.getMonth() - monthsAgo, day); return d.toISOString().split('T')[0]; }
-            const demoAgends = [
-                { id: 1, nome: 'Juliana Costa', telefone: '(11) 99876-5432', procedimento: 'Aplicação de Botox (Região)', data: getDateStr(2, 10), hora: '14:00', criadoEm: new Date().toLocaleString('pt-BR') },
-                { id: 2, nome: 'Ana Oliveira', telefone: '(11) 91234-5678', procedimento: 'Drenagem Linfática Corporal', data: getDateStr(1, 15), hora: '16:30', criadoEm: new Date().toLocaleString('pt-BR') },
-                { id: 3, nome: 'Carla Mendes', telefone: '(11) 95555-1234', procedimento: 'Massagem Modeladora Redutora', data: getDateStr(1, 20), hora: '10:00', criadoEm: new Date().toLocaleString('pt-BR') },
-                { id: 4, nome: 'Fernanda Souza', telefone: '(11) 97777-8888', procedimento: 'Peeling Químico Renovador', data: getDateStr(0, 5), hora: '11:30', criadoEm: new Date().toLocaleString('pt-BR') },
-                { id: 5, nome: 'Patricia Lima', telefone: '(11) 96666-9999', procedimento: 'Carboxiterapia para Celulite', data: getDateStr(0, 12), hora: '15:00', criadoEm: new Date().toLocaleString('pt-BR') },
-                { id: 6, nome: 'Mariana Silva', telefone: '(11) 98765-4321', procedimento: 'Limpeza de Pele Profunda', data: getDateStr(0, 18), hora: '09:00', criadoEm: new Date().toLocaleString('pt-BR') }
-            ];
-            localStorage.setItem('esteticaPro_agendamentos', JSON.stringify(demoAgends));
-        }
-        let lancs = JSON.parse(localStorage.getItem('esteticaPro_lancamentos') || '[]');
-        if (lancs.length === 0) {
-            const demoLancs = [
-                { id: 1, desc: 'Aluguel do Espaço', valor: 1200, tipo: 'Despesa', data: '01/10/2023 09:00:00' },
-                { id: 2, desc: 'Compra de Materiais (Botox)', valor: 850, tipo: 'Despesa', data: '05/10/2023 14:30:00' },
-                { id: 3, desc: 'Venda de Creme Facial (Revenda)', valor: 150, tipo: 'Receita', data: '08/10/2023 11:00:00' },
-                { id: 4, desc: 'Parceira - Indicação de Cliente', valor: 200, tipo: 'Receita', data: '12/10/2023 16:00:00' },
-                { id: 5, desc: 'Conta de Energia Elétrica', valor: 320, tipo: 'Despesa', data: '20/10/2023 10:15:00' },
-                { id: 6, desc: 'Venda de Pacote Estético (3 sessões)', valor: 450, tipo: 'Receita', data: '25/10/2023 18:00:00' }
-            ];
-            localStorage.setItem('esteticaPro_lancamentos', JSON.stringify(demoLancs));
-        }
-    }
-
-    function toggleMobileMenu() { document.getElementById('mobileMenu').classList.toggle('hidden'); }
-
-    function initHorarios() {
-        const select = document.getElementById('hora');
-        for (let h = 8; h <= 18; h++) {
-            const hora = h.toString().padStart(2,'0');
-            ['00','30'].forEach(min => { if (h === 18 && min === '30') return; const opt = document.createElement('option'); opt.value = hora+':'+min; opt.textContent = hora+':'+min; select.appendChild(opt); });
-        }
-    }
-
-    function initDateValidation() {
-        const input = document.getElementById('data'); const amanha = new Date(); amanha.setDate(amanha.getDate()+1); input.min = formatDateISO(amanha);
-        const max = new Date(); max.setDate(max.getDate()+60); input.max = formatDateISO(max);
-        input.addEventListener('change', () => { const data = new Date(input.value+'T12:00:00'); const erro = document.getElementById('dataErro'); if (data.getDay() === 0) { erro.classList.remove('hidden'); input.value = ''; } else { erro.classList.add('hidden'); } });
-    }
-
-    function handleAgendamento(e) {
-        e.preventDefault();
-        const nome = document.getElementById('nome').value.trim(); const telefone = document.getElementById('telefone').value.trim();
-        const procedimento = document.getElementById('procedimento').value; const data = document.getElementById('data').value; const hora = document.getElementById('hora').value;
-        if (!nome || !telefone || !procedimento || !data || !hora) { showToast('Preencha todos os campos!','error'); return; }
-        const dataObj = new Date(data+'T12:00:00'); if (dataObj.getDay() === 0) { showToast('Não atendemos aos domingos!','error'); return; }
-        const ag = { id: Date.now(), nome, telefone, procedimento, data, hora, criadoEm: new Date().toLocaleString('pt-BR') };
-        const list = JSON.parse(localStorage.getItem('esteticaPro_agendamentos')||'[]'); list.unshift(ag);
-        localStorage.setItem('esteticaPro_agendamentos', JSON.stringify(list));
-        
-        showToast('Agendamento registrado! Redirecionando para o pagamento...');
-        // Redirecionamento direto para evitar bloqueio de pop-up
-        setTimeout(() => { window.location.href = 'https://mpago.la/2iB3sAD'; }, 800);
-    }
-
-    function toggleAdmin() { const overlay = document.getElementById('adminOverlay'); overlay.classList.toggle('active'); if (overlay.classList.contains('active')) { switchAdminTab('dashboard'); } }
-
-    let chartServicos = null, chartMeses = null, chartReceitaServico = null, chartDistribuicao = null, chartEvolucao = null, chartEstoque = null;
-
-    function switchAdminTab(tab) {
-        ['dashboard','agendamentos','financeiro','estoque'].forEach(t => { document.getElementById('panel-'+t).classList.toggle('active', t === tab); const nav = document.getElementById('nav-'+t); if (nav) nav.classList.toggle('active', t === tab); });
-        if (tab === 'dashboard') { renderDashboard(); } if (tab === 'agendamentos') { renderAgendamentos(); } if (tab === 'financeiro') { renderFinanceiro(); } if (tab === 'estoque') { renderEstoque(); renderChartEstoque(); }
-    }
-
-    function renderDashboard() {
-        const agends = JSON.parse(localStorage.getItem('esteticaPro_agendamentos')||'[]'); const estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]');
-        const alertas = estoque.filter(p => p.status === 'Alerta de Reposição' || p.quantidade <= 5).length; const receita = agends.reduce((acc, a) => acc + getPriceForService(a.procedimento), 0);
-        document.getElementById('kpi-agendamentos').textContent = agends.length; document.getElementById('kpi-receita').textContent = formatBRL(receita); document.getElementById('kpi-produtos').textContent = estoque.length; document.getElementById('kpi-alertas').textContent = alertas;
-        const badgeA = document.getElementById('badgeAgend'); if (badgeA) badgeA.textContent = agends.length; const badgeE = document.getElementById('badgeEstoque'); if (badgeE) badgeE.textContent = alertas;
-        renderChartServicos(agends); renderChartMeses(agends); renderDashboardAgendList(agends);
-    }
-
-    function renderDashboardAgendList(agends) {
-        const el = document.getElementById('dashboardAgendList'); if (!el) return; const recent = agends.slice(0,5);
-        if (!recent.length) { el.innerHTML = '<div style="text-align:center; color:#475569; padding:20px; font-size:13px;">Nenhum agendamento ainda.</div>'; return; }
-        el.innerHTML = recent.map(a => { const price = getPriceForService(a.procedimento); return `<div class="table-row" style="display:flex; align-items:center; justify-content:space-between; padding:12px 0; border-bottom:1px solid #1e293b;"><div style="display:flex; align-items:center; gap:12px;"><div style="width:36px; height:36px; background:linear-gradient(135deg,#ff1493,#ff69b4); border-radius:10px; display:flex; align-items:center; justify-content:center; flex-shrink:0;"><i class="fas fa-user" style="color:white; font-size:12px;"></i></div><div><div style="color:#e2e8f0; font-weight:700; font-size:13px;">${a.nome}</div><div style="color:#64748b; font-size:11px;">${a.procedimento} · ${formatarDataBR(a.data)} às ${a.hora}</div></div></div><div style="text-align:right;"><div style="color:#10b981; font-weight:800; font-size:14px;">${price ? formatBRL(price) : '—'}</div><div style="color:#475569; font-size:10px;">${a.telefone}</div></div></div>`; }).join('');
-    }
-
-    function renderChartServicos(agends) {
-        const ctx = document.getElementById('chartServicos'); if (!ctx) return; const count = {};
-        agends.forEach(a => { count[a.procedimento] = (count[a.procedimento]||0) + 1; });
-        const labels = Object.keys(count); const data = Object.values(count); const colors = ['#ff1493','#ff69b4','#6366f1','#10b981','#f59e0b','#3b82f6'];
-        if (chartServicos) chartServicos.destroy();
-        chartServicos = new Chart(ctx, { type: 'bar', data: { labels: labels.map(l => l.length > 16 ? l.substring(0,16)+'…' : l), datasets: [{ data, backgroundColor: colors.slice(0, data.length), borderRadius: 8, borderSkipped: false }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: (i) => labels[i[0].dataIndex] } } }, scales: { y: { beginAtZero: true, ticks: { color: '#64748b', stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } }, x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { display: false } } } } });
-    }
-
-    function renderChartMeses(agends) {
-        const ctx = document.getElementById('chartMeses'); if (!ctx) return; const now = new Date(); const months = []; const counts = [];
-        for (let i = 5; i >= 0; i--) { const d = new Date(now.getFullYear(), now.getMonth() - i, 1); months.push(d.toLocaleString('pt-BR', { month: 'short', year: '2-digit' })); counts.push(agends.filter(a => { const ad = new Date(a.data+'T12:00:00'); return ad.getMonth() === d.getMonth() && ad.getFullYear() === d.getFullYear(); }).length); }
-        if (chartMeses) chartMeses.destroy();
-        chartMeses = new Chart(ctx, { type: 'line', data: { labels: months, datasets: [{ data: counts, borderColor: '#6366f1', backgroundColor: 'rgba(99,102,241,0.15)', fill: true, tension: 0.4, pointBackgroundColor: '#6366f1', pointRadius: 5 }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { color: '#64748b', stepSize: 1 }, grid: { color: 'rgba(255,255,255,0.05)' } }, x: { ticks: { color: '#64748b' }, grid: { display: false } } } } });
-    }
-
-    function renderAgendamentos() {
-        const search = (document.getElementById('searchAgend')||{value:''}).value.toLowerCase(); let agends = JSON.parse(localStorage.getItem('esteticaPro_agendamentos')||'[]');
-        if (search) agends = agends.filter(a => a.nome.toLowerCase().includes(search) || a.procedimento.toLowerCase().includes(search));
-        const countEl = document.getElementById('countAgendamentos'); if (countEl) countEl.textContent = agends.length + ' registro' + (agends.length !== 1 ? 's' : '');
-        const tbody = document.getElementById('tabelaAgendamentos'); if (!tbody) return;
-        if (!agends.length) { tbody.innerHTML = `<tr><td colspan="5" style="padding:32px; text-align:center; color:#475569; font-size:13px;"><i class="fas fa-calendar-times" style="font-size:24px; display:block; margin-bottom:8px; color:#334155;"></i>Nenhum agendamento encontrado</td></tr>`; return; }
-        tbody.innerHTML = agends.map(a => { const price = getPriceForService(a.procedimento); return `<tr class="table-row" style="border-bottom:1px solid #1e293b;"><td style="padding:14px 16px;"><div style="color:#e2e8f0; font-weight:700; font-size:13px;">${formatarDataBR(a.data)}</div><div style="color:#64748b; font-size:11px;">${a.hora}</div></td><td style="padding:14px 16px;"><div style="display:flex; align-items:center; gap:8px;"><div style="width:30px; height:30px; background:linear-gradient(135deg,#ff1493,#ff69b4); border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0;"><i class="fas fa-user" style="color:white; font-size:10px;"></i></div><span style="color:#e2e8f0; font-weight:600; font-size:13px;">${a.nome}</span></div></td><td style="padding:14px 16px;"><span style="background:rgba(255,20,147,0.15); color:#ff69b4; padding:4px 10px; border-radius:99px; font-size:11px; font-weight:700;">${a.procedimento}</span>${price ? `<div style="color:#10b981; font-size:11px; font-weight:700; margin-top:3px;">${formatBRL(price)}</div>` : ''}</td><td style="padding:14px 16px; color:#94a3b8; font-size:12px;">${a.telefone}</td><td style="padding:14px 16px; text-align:center;"><button onclick="deleteAgendamento(${a.id})" style="background:rgba(239,68,68,0.1); color:#ef4444; border:none; padding:6px 10px; border-radius:8px; cursor:pointer; font-size:12px; transition:all 0.2s;" onmouseover="this.style.background='rgba(239,68,68,0.25)'" onmouseout="this.style.background='rgba(239,68,68,0.1)'"><i class="fas fa-trash"></i></button></td></tr>`; }).join('');
-    }
-
-    function deleteAgendamento(id) { let list = JSON.parse(localStorage.getItem('esteticaPro_agendamentos')||'[]'); list = list.filter(a => a.id !== id); localStorage.setItem('esteticaPro_agendamentos', JSON.stringify(list)); renderAgendamentos(); renderDashboard(); showToast('Agendamento removido'); }
-    function clearAgendamentos() { if (!confirm('Apagar TODOS os agendamentos?')) return; localStorage.removeItem('esteticaPro_agendamentos'); renderAgendamentos(); showToast('Todos os agendamentos foram removidos'); }
-
-    function renderFinanceiro() {
-        const agends = JSON.parse(localStorage.getItem('esteticaPro_agendamentos')||'[]'); const lancamentos = JSON.parse(localStorage.getItem('esteticaPro_lancamentos')||'[]');
-        const receitaAgends = agends.reduce((acc, a) => acc + getPriceForService(a.procedimento), 0); const receitaManual = lancamentos.filter(l => l.tipo === 'Receita').reduce((acc, l) => acc + parseFloat(l.valor||0), 0);
-        const despesas = lancamentos.filter(l => l.tipo === 'Despesa').reduce((acc, l) => acc + parseFloat(l.valor||0), 0); const total = receitaAgends + receitaManual - despesas; const ticket = agends.length ? (receitaAgends / agends.length) : 0;
-        const cnt = {}; agends.forEach(a => { cnt[a.procedimento] = (cnt[a.procedimento]||0) + 1; }); const topService = Object.entries(cnt).sort((a,b) => b[1]-a[1])[0];
-        document.getElementById('fin-receita-total').textContent = formatBRL(total); document.getElementById('fin-ticket').textContent = formatBRL(ticket); document.getElementById('fin-clientes').textContent = agends.length; document.getElementById('fin-top-service').textContent = topService ? topService[0].replace(' Corporal','').replace(' Profunda','') : '—';
-        renderChartReceitaServico(agends); renderChartDistribuicao(agends); renderChartEvolucao(agends); renderLancamentos();
-    }
-
-    function renderChartReceitaServico(agends) {
-        const ctx = document.getElementById('chartReceitaServico'); if (!ctx) return; const map = {};
-        agends.forEach(a => { const p = getPriceForService(a.procedimento); map[a.procedimento] = (map[a.procedimento]||0) + p; });
-        const labels = Object.keys(map); const data = Object.values(map); const colors = ['#10b981','#6366f1','#ff69b4','#f59e0b','#3b82f6','#ff1493'];
-        if (chartReceitaServico) chartReceitaServico.destroy();
-        chartReceitaServico = new Chart(ctx, { type: 'bar', data: { labels: labels.map(l => l.length > 18 ? l.substring(0,18)+'…' : l), datasets: [{ data, backgroundColor: colors.slice(0, data.length), borderRadius: 8, borderSkipped: false }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { title: (i) => labels[i[0].dataIndex], label: (i) => ' ' + formatBRL(i.raw) } } }, scales: { y: { beginAtZero: true, ticks: { color: '#64748b', callback: v => 'R$' + v }, grid: { color: 'rgba(255,255,255,0.05)' } }, x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { display: false } } } } });
-    }
-
-    function renderChartDistribuicao(agends) {
-        const ctx = document.getElementById('chartDistribuicao'); if (!ctx) return;
-        const map = {}; agends.forEach(a => { const p = getPriceForService(a.procedimento); if (p > 0) map[a.procedimento] = (map[a.procedimento]||0) + p; });
-        const labels = Object.keys(map); const data = Object.values(map); const colors = ['#ff1493','#10b981','#6366f1','#f59e0b','#3b82f6','#ff69b4'];
-        if (chartDistribuicao) chartDistribuicao.destroy();
-        if (!labels.length) {
-            chartDistribuicao = new Chart(ctx, { type: 'doughnut', data: { labels: ['Sem dados'], datasets: [{ data: [1], backgroundColor: ['#334155'], borderWidth: 0 }] }, options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { display: false }, tooltip: { enabled: false } } } });
-            return;
-        }
-        chartDistribuicao = new Chart(ctx, { type: 'doughnut', data: { labels: labels.map(l => l.length > 18 ? l.substring(0,18)+'…' : l), datasets: [{ data, backgroundColor: colors.slice(0, data.length), borderWidth: 0, hoverBorderWidth: 3, hoverBorderColor: '#fff' }] }, options: { responsive: true, maintainAspectRatio: false, cutout: '65%', plugins: { legend: { position: 'right', labels: { color: '#94a3b8', font: { size: 11 }, padding: 16, boxWidth: 12 } }, tooltip: { callbacks: { title: (i) => labels[i[0].dataIndex], label: (i) => ' ' + formatBRL(i.raw) } } } } });
-    }
-
-    function renderChartEvolucao(agends) {
-        const ctx = document.getElementById('chartEvolucao'); if (!ctx) return; const now = new Date(); const months = [], receitas = [], counts = [];
-        for (let i = 5; i >= 0; i--) { const d = new Date(now.getFullYear(), now.getMonth() - i, 1); months.push(d.toLocaleString('pt-BR', { month: 'short', year: '2-digit' })); const monthAgends = agends.filter(a => { const ad = new Date(a.data+'T12:00:00'); return ad.getMonth() === d.getMonth() && ad.getFullYear() === d.getFullYear(); }); receitas.push(monthAgends.reduce((acc, a) => acc + getPriceForService(a.procedimento), 0)); counts.push(monthAgends.length); }
-        if (chartEvolucao) chartEvolucao.destroy();
-        chartEvolucao = new Chart(ctx, { type: 'line', data: { labels: months, datasets: [{ label: 'Receita (R$)', data: receitas, borderColor: '#10b981', backgroundColor: 'rgba(16,185,129,0.12)', fill: true, tension: 0.4, pointBackgroundColor: '#10b981', pointRadius: 6, yAxisID: 'y' }, { label: 'Agendamentos', data: counts, borderColor: '#6366f1', backgroundColor: 'rgba(99,102,241,0.08)', fill: false, tension: 0.4, pointBackgroundColor: '#6366f1', pointRadius: 5, yAxisID: 'y1', borderDash: [5,3] }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { labels: { color: '#94a3b8', font: { size: 11 }, padding: 20 } }, tooltip: { callbacks: { label: (i) => i.dataset.label + ': ' + (i.datasetIndex === 0 ? formatBRL(i.raw) : i.raw + ' agend.') } } }, scales: { y: { beginAtZero: true, position: 'left', ticks: { color: '#10b981', callback: v => 'R$'+v }, grid: { color: 'rgba(255,255,255,0.05)' } }, y1: { beginAtZero: true, position: 'right', ticks: { color: '#6366f1', stepSize: 1 }, grid: { display: false } }, x: { ticks: { color: '#64748b' }, grid: { display: false } } } } });
-    }
-
-    function addFinanceRecord() { document.getElementById('formLancamento').style.display = 'block'; document.getElementById('lancDesc').focus(); }
-    function saveLancamento() {
-        const desc = document.getElementById('lancDesc').value.trim(); const valor = parseFloat(document.getElementById('lancValor').value); const tipo = document.getElementById('lancTipo').value;
-        if (!desc || isNaN(valor) || valor <= 0) { showToast('Preencha todos os campos corretamente!','error'); return; }
-        const list = JSON.parse(localStorage.getItem('esteticaPro_lancamentos')||'[]'); list.unshift({ id: Date.now(), desc, valor, tipo, data: new Date().toLocaleString('pt-BR') }); localStorage.setItem('esteticaPro_lancamentos', JSON.stringify(list));
-        document.getElementById('formLancamento').style.display = 'none'; document.getElementById('lancDesc').value = ''; document.getElementById('lancValor').value = ''; renderFinanceiro(); showToast(tipo === 'Receita' ? '💰 Receita registrada!' : '💸 Despesa registrada!');
-    }
-
-    function renderLancamentos() {
-        const list = JSON.parse(localStorage.getItem('esteticaPro_lancamentos')||'[]'); const countEl = document.getElementById('countLancamentos');
-        if (countEl) countEl.textContent = list.length + ' registro' + (list.length !== 1 ? 's' : ''); const tbody = document.getElementById('tabelaLancamentos'); if (!tbody) return;
-        if (!list.length) { tbody.innerHTML = `<tr><td colspan="5" style="padding:28px; text-align:center; color:#475569; font-size:13px;"><i class="fas fa-receipt" style="font-size:24px; display:block; margin-bottom:8px; color:#334155;"></i>Nenhum lançamento manual ainda.<br><span style="font-size:11px; color:#334155;">Clique em "Lançamento Manual" para adicionar.</span></td></tr>`; return; }
-        tbody.innerHTML = list.map(l => `<tr class="table-row" style="border-bottom:1px solid #1e293b;"><td style="padding:12px 16px; color:#64748b; font-size:12px;">${l.data}</td><td style="padding:12px 16px; color:#e2e8f0; font-size:13px; font-weight:600;">${l.desc}</td><td style="padding:12px 16px; text-align:center;"><span class="${l.tipo==='Receita'?'status-ok':'status-danger'} status-badge">${l.tipo==='Receita'?'💰':'💸'} ${l.tipo}</span></td><td style="padding:12px 16px; text-align:right; font-weight:800; font-size:14px; color:${l.tipo==='Receita'?'#10b981':'#ef4444'};">${l.tipo==='Despesa'?'-':''}${formatBRL(l.valor)}</td><td style="padding:12px 16px; text-align:center;"><button onclick="deleteLancamento(${l.id})" style="background:rgba(239,68,68,0.1); color:#ef4444; border:none; padding:6px 10px; border-radius:8px; cursor:pointer; font-size:12px;" onmouseover="this.style.background='rgba(239,68,68,0.25)'" onmouseout="this.style.background='rgba(239,68,68,0.1)'"><i class="fas fa-trash"></i></button></td></tr>`).join('');
-    }
-
-    function deleteLancamento(id) { let list = JSON.parse(localStorage.getItem('esteticaPro_lancamentos')||'[]'); list = list.filter(l => l.id !== id); localStorage.setItem('esteticaPro_lancamentos', JSON.stringify(list)); renderFinanceiro(); showToast('Lançamento removido'); }
-
-    function initDefaultStock() {
-        let estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque') || '[]');
-        if (estoque.length === 0) {
-            const demoStock = [{ id: 1, nome: 'Creme Hidratante Facial', quantidade: 12, status: 'Disponível' }, { id: 2, nome: 'Máscara de Argila Verde', quantidade: 3, status: 'Alerta de Reposição' }, { id: 3, nome: 'Luvas de Procedimento', quantidade: 8, status: 'Disponível' }, { id: 4, nome: 'Agulhas para Botox', quantidade: 25, status: 'Disponível' }, { id: 5, nome: 'Ácido Hialurônico', quantidade: 2, status: 'Alerta de Reposição' }, { id: 6, nome: 'Álcool 70%', quantidade: 5, status: 'Alerta de Reposição' }];
-            localStorage.setItem('esteticaPro_estoque', JSON.stringify(demoStock));
-        }
-    }
-
-    function renderEstoque() {
-        const estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]'); const alertas = estoque.filter(p => p.status === 'Alerta de Reposição' || p.quantidade <= 5);
-        const alertDiv = document.getElementById('estoqueAlertas');
-        if (alertDiv) { if (alertas.length) { alertDiv.innerHTML = `<div style="background:rgba(245,158,11,0.12); border:1px solid rgba(245,158,11,0.3); border-radius:12px; padding:14px 18px; display:flex; align-items:center; gap:12px;"><i class="fas fa-exclamation-triangle" style="color:#f59e0b; font-size:18px;"></i><div><div style="color:#f59e0b; font-weight:700; font-size:13px;">⚠️ ${alertas.length} produto(s) com estoque baixo</div><div style="color:#94a3b8; font-size:11px; margin-top:2px;">${alertas.map(p=>p.nome).join(', ')}</div></div></div>`; } else { alertDiv.innerHTML = ''; } }
-        const tbody = document.getElementById('tabelaEstoque'); if (!tbody) return;
-        if (!estoque.length) { tbody.innerHTML = `<tr><td colspan="5" style="padding:32px; text-align:center; color:#475569; font-size:13px;">Nenhum produto cadastrado</td></tr>`; return; }
-        const maxQtd = Math.max(...estoque.map(p => p.quantidade), 1);
-        tbody.innerHTML = estoque.map(p => { const pct = Math.min((p.quantidade / maxQtd) * 100, 100); const statusClass = p.status === 'Disponível' && p.quantidade > 5 ? 'status-ok' : 'status-alert'; const dangerClass = p.quantidade === 0 ? 'status-danger' : statusClass; return `<tr class="table-row" style="border-bottom:1px solid #1e293b;"><td style="padding:14px 16px;"><div style="display:flex; align-items:center; gap:10px;"><div style="width:32px; height:32px; background:#1a2744; border-radius:8px; display:flex; align-items:center; justify-content:center; flex-shrink:0;"><i class="fas fa-box" style="color:#64748b; font-size:11px;"></i></div><span style="color:#e2e8f0; font-weight:600; font-size:13px;">${p.nome}</span></div></td><td style="padding:14px 16px; text-align:center;"><span style="color:${p.quantidade <= 5 ? '#ef4444' : '#e2e8f0'}; font-weight:800; font-size:16px;">${p.quantidade}</span><span style="color:#475569; font-size:10px;"> un</span></td><td style="padding:14px 16px; min-width:120px;"><div class="progress-bar"><div class="progress-fill" style="width:${pct}%; background:${p.quantidade <= 5 ? '#ef4444' : p.quantidade <= 10 ? '#f59e0b' : 'linear-gradient(90deg,#ff1493,#ff69b4)'};"></div></div><div style="color:#475569; font-size:10px; margin-top:4px; text-align:right;">${Math.round(pct)}%</div></td><td style="padding:14px 16px; text-align:center;"><span class="${dangerClass} status-badge">${p.quantidade === 0 ? '🚨 Esgotado' : p.status === 'Disponível' && p.quantidade > 5 ? '✅ Disponível' : '⚠️ Alerta'}</span></td><td style="padding:14px 16px; text-align:center;"><div style="display:flex; align-items:center; justify-content:center; gap:6px;"><button onclick="editStock(${p.id}, 1)" style="background:rgba(16,185,129,0.15); color:#10b981; border:none; width:28px; height:28px; border-radius:7px; cursor:pointer; font-size:14px; font-weight:900; transition:all 0.2s;" title="Adicionar">+</button><button onclick="editStock(${p.id}, -1)" style="background:rgba(239,68,68,0.12); color:#ef4444; border:none; width:28px; height:28px; border-radius:7px; cursor:pointer; font-size:14px; font-weight:900; transition:all 0.2s;" title="Remover">−</button><button onclick="deleteProduct(${p.id})" style="background:rgba(255,255,255,0.05); color:#475569; border:none; width:28px; height:28px; border-radius:7px; cursor:pointer; font-size:11px; transition:all 0.2s;" title="Excluir" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#475569'"><i class="fas fa-trash"></i></button></div></td></tr>`; }).join('');
-    }
-
-    function renderChartEstoque() {
-        const ctx = document.getElementById('chartEstoque'); if (!ctx) return; const estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]');
-        const labels = estoque.map(p => p.nome.length > 18 ? p.nome.substring(0,18)+'…' : p.nome); const data = estoque.map(p => p.quantidade); const colors = data.map(q => q === 0 ? '#ef4444' : q <= 5 ? '#f59e0b' : '#10b981');
-        if (chartEstoque) chartEstoque.destroy();
-        chartEstoque = new Chart(ctx, { type: 'bar', data: { labels, datasets: [{ data, backgroundColor: colors, borderRadius: 8, borderSkipped: false }] }, options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: (i) => ' ' + i.raw + ' unidades' } } }, scales: { y: { beginAtZero: true, ticks: { color: '#64748b', stepSize: 5 }, grid: { color: 'rgba(255,255,255,0.05)' } }, x: { ticks: { color: '#64748b', font: { size: 10 } }, grid: { display: false } } } } });
-    }
-
-    function openAddProduct() { document.getElementById('addProductForm').style.display = 'block'; document.getElementById('produtoNome').focus(); }
-    function closeAddProduct() { document.getElementById('addProductForm').style.display = 'none'; document.getElementById('produtoNome').value = ''; document.getElementById('produtoQtd').value = '0'; document.getElementById('produtoStatus').value = 'Disponível'; }
-    function addProduct() {
-        const nome = document.getElementById('produtoNome').value.trim(); const qtd = parseInt(document.getElementById('produtoQtd').value); const status = document.getElementById('produtoStatus').value;
-        if (!nome || isNaN(qtd) || qtd < 0) { showToast('Preencha todos os campos corretamente!','error'); return; }
-        const estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]'); estoque.push({ id: Date.now(), nome, quantidade: qtd, status }); localStorage.setItem('esteticaPro_estoque', JSON.stringify(estoque));
-        closeAddProduct(); renderEstoque(); renderChartEstoque(); showToast('Produto adicionado ao estoque!');
-    }
-    function editStock(id, delta) { const estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]'); const p = estoque.find(e => e.id === id); if (!p) return; p.quantidade = Math.max(0, p.quantidade + delta); p.status = p.quantidade <= 5 ? 'Alerta de Reposição' : 'Disponível'; localStorage.setItem('esteticaPro_estoque', JSON.stringify(estoque)); renderEstoque(); renderChartEstoque(); }
-    function deleteProduct(id) { if (!confirm('Remover este produto do estoque?')) return; let estoque = JSON.parse(localStorage.getItem('esteticaPro_estoque')||'[]'); estoque = estoque.filter(p => p.id !== id); localStorage.setItem('esteticaPro_estoque', JSON.stringify(estoque)); renderEstoque(); renderChartEstoque(); showToast('Produto removido'); }
-
-    function clearAllData() {
-        if (!confirm('Apagar TODOS os dados? (agendamentos, estoque, lançamentos)')) return;
-        localStorage.removeItem('esteticaPro_agendamentos'); localStorage.removeItem('esteticaPro_lancamentos'); localStorage.removeItem('esteticaPro_estoque');
-        initDemoData(); initDefaultStock(); renderAgendamentos(); renderDashboard(); renderFinanceiro(); renderEstoque(); showToast('Dados limpos! Dados de demonstração recarregados.');
-    }
-
-    function showToast(msg, type) {
-        type = type || 'success'; const toast = document.getElementById('toast'); const toastMsg = document.getElementById('toastMsg'); const icon = document.getElementById('toastIcon');
-        if (!toast || !toastMsg) return; toastMsg.textContent = msg;
-        if (type === 'error') { icon.className = 'fas fa-exclamation-circle text-red-400'; } else { icon.className = 'fas fa-check-circle text-emerald-400'; }
-        toast.classList.remove('translate-x-full'); setTimeout(() => toast.classList.add('translate-x-full'), 3000);
-    }
-    </script>
-</body>
-</html>
-```
+        <i id
