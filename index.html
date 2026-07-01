@@ -1,8 +1,4 @@
-Olhei minuciosamente o código para encontrar os erros. Encontrei três problemas principais que estavam causando mau funcionamento:
-
-1. **Erro do Gráfico de Distribuição (Pizza):** Se não houvesse dados, o código anterior destruía o elemento do gráfico, o que fazia o painel quebrar e não mostrar mais nada quando você limpava os dados. Corrigi isso para que o gráfico apenas mostre "Sem dados" sem quebrar a tela.
-2. **Erro de Redirecionamento do Pagamento:** O redirecionamento do formulário de agendamento usava um `setTimeout` com `window.open`, o que os navegadores bloqueiam como "Pop-up indesejado". Troquei para um redirecionamento direto na mesma aba, que funciona 100% das vezes.
-3. **Scripts de Rastreamento Quebrados:** O código original tinha scripts escondidos do Cloudflare e de um inspetor de sandbox que estavam dando erro 404 (não encontrados) no console e sujando o seu site. Removi todos esses pesos mortos. Também corrigi o link do e-mail no rodapé que estava codificado de forma estranha.
+ados) no console e sujando o seu site. Removi todos esses pesos mortos. Também corrigi o link do e-mail no rodapé que estava codificado de forma estranha.
 
 Aqui está o código **100% corrigido, limpo e otimizado**. Pode copiar e substituir com segurança:
 
