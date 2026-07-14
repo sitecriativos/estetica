@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -35,7 +33,7 @@
         .service-card { background: linear-gradient(145deg, #fff0f5 0%, #ffe4e1 100%); border: 2px solid #ffb6c1; }
         .service-card:hover { border-color: #ff1493; box-shadow: 0 20px 40px rgba(255,20,147,0.2); }
         .price-tag { background: linear-gradient(135deg, #ff1493 0%, #ff69b4 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
-
+        
         /* Admin Panel Styles */
         .admin-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); z-index: 100; }
         .admin-overlay.active { display: flex; }
@@ -78,6 +76,7 @@
 </head>
 <body class="bg-[#fff0f5] text-slate-800">
 
+    <!-- NAV BAR -->
     <nav class="fixed top-0 w-full z-40 glass border-b border-pink-200/50 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -112,6 +111,7 @@
         </div>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="gradient-hero min-h-screen flex items-center pt-20 px-4 relative">
         <div class="blob bg-pink-400 w-96 h-96 rounded-full top-20 left-10"></div>
         <div class="blob bg-rose-300 w-80 h-80 rounded-full bottom-20 right-10" style="animation-delay: -5s;"></div>
@@ -163,11 +163,12 @@
         </div>
     </section>
 
+    <!-- PROFILES SECTION -->
     <section class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Solução Perfeita Para Você</h2>
-                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Atendemos diferentes profiles de profissionais da beleza e estética</p>
+                <p class="text-xl text-slate-500 max-w-2xl mx-auto">Atendemos diferentes perfis de profissionais da beleza e estética</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group relative bg-white rounded-3xl overflow-hidden shadow-lg card-hover border border-pink-200">
@@ -198,6 +199,7 @@
         </div>
     </section>
 
+    <!-- PRICING SECTION -->
     <section id="planos" class="py-24 px-4 bg-gradient-to-br from-pink-50 to-rose-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
@@ -263,6 +265,7 @@
         </div>
     </section>
 
+    <!-- SERVICES CATALOG -->
     <section id="servicos" class="py-24 px-4 bg-white">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16">
@@ -270,6 +273,7 @@
                 <p class="text-xl text-slate-500">Exemplo de catálogo de serviços com agendamento direto pelo WhatsApp</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Limpeza de Pele -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=600&h=400&fit=crop&q=90" alt="Limpeza de Pele Profunda" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -282,6 +286,7 @@
                         <div class="flex items-center justify-between"><span class="price-tag text-3xl">R$ 120</span><a href="https://wa.me/5511957130312?text=Olá!%20Quero%20agendar%20o%20serviço%20de%20*Limpeza%20de%20Pele%20Profunda*%20(R$%20120,00)" target="_blank" class="whatsapp-btn px-5 py-2.5 text-white text-sm font-bold rounded-full flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar</a></div>
                     </div>
                 </div>
+                <!-- Drenagem Linfatica -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=600&h=400&fit=crop&q=90" alt="Drenagem Linfática Corporal" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -293,6 +298,7 @@
                         <div class="flex items-center justify-between"><span class="price-tag text-3xl">R$ 150</span><a href="https://wa.me/5511957130312?text=Olá!%20Quero%20agendar%20o%20serviço%20de%20*Drenagem%20Linfática%20Corporal*%20(R$%20150,00)" target="_blank" class="whatsapp-btn px-5 py-2.5 text-white text-sm font-bold rounded-full flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar</a></div>
                     </div>
                 </div>
+                <!-- Massagem Modeladora -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=600&h=400&fit=crop&q=90" alt="Massagem Modeladora Redutora" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -304,6 +310,7 @@
                         <div class="flex items-center justify-between"><span class="price-tag text-3xl">R$ 160</span><a href="https://wa.me/5511957130312?text=Olá!%20Quero%20agendar%20o%20serviço%20de%20*Massagem%20Modeladora%20Redutora*%20(R$%20160,00)" target="_blank" class="whatsapp-btn px-5 py-2.5 text-white text-sm font-bold rounded-full flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar</a></div>
                     </div>
                 </div>
+                <!-- Botox -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=600&h=400&fit=crop&q=90" alt="Aplicação de Botox" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -316,7 +323,7 @@
                         <div class="flex items-center justify-between"><span class="price-tag text-3xl">R$ 350</span><a href="https://wa.me/5511957130312?text=Olá!%20Quero%20agendar%20o%20serviço%20de%20*Aplicação%20de%20Botox*%20(R$%20350,00)" target="_blank" class="whatsapp-btn px-5 py-2.5 text-white text-sm font-bold rounded-full flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar</a></div>
                     </div>
                 </div>
-                
+                <!-- Peeling -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=600&h=400&fit=crop&q=90" alt="Peeling Químico" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -328,7 +335,7 @@
                         <div class="flex items-center justify-between"><span class="price-tag text-3xl">R$ 200</span><a href="https://wa.me/5511957130312?text=Olá!%20Quero%20agendar%20o%20serviço%20de%20*Peeling%20Químico*%20(R$%20200,00)" target="_blank" class="whatsapp-btn px-5 py-2.5 text-white text-sm font-bold rounded-full flex items-center gap-2"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Agendar</a></div>
                     </div>
                 </div>
-
+                <!-- Carboxiterapia -->
                 <div class="service-card rounded-2xl overflow-hidden shadow-lg card-hover group">
                     <div class="h-56 overflow-hidden relative">
                         <img src="https://images.unsplash.com/photo-1596755389378-c31d21fd1273?w=600&h=400&fit=crop&q=90" alt="Carboxiterapia" class="w-full h-full object-cover group-hover:scale-110 transition duration-500 img-premium">
@@ -345,11 +352,12 @@
         </div>
     </section>
 
+    <!-- SCHEDULING FORM -->
     <section id="agendamento" class="py-24 px-4 bg-gradient-to-br from-pink-50 to-white">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12">
                 <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">Agende seu Horário</h2>
-                <p class="text-lg text-slate-500">Preencha os dados abaixo e finalize o pagamento</p>
+                <p class="text-lg text-slate-500">Preencha os dados abaixo e finalize o agendamento</p>
             </div>
             <div class="bg-white rounded-3xl p-8 shadow-2xl border border-pink-200">
                 <form id="agendamentoForm" onsubmit="handleAgendamento(event)">
@@ -370,15 +378,26 @@
                         </select>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
-                        <div><label class="block text-sm font-semibold text-slate-700 mb-2">Data</label><input type="date" id="data" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition"><p id="dataErro" class="text-red-500 text-xs mt-1 hidden">❌ Domingos não são permitidos. Escolha Seg-Sáb.</p></div>
-                        <div><label class="block text-sm font-semibold text-slate-700 mb-2">Horário</label><select id="hora" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition bg-white"><option value="">Selecione</option></select><p id="horaErro" class="text-red-500 text-xs mt-1 hidden">❌ Horário fora do expediente (08:00-18:00).</p></div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Data</label>
+                            <input type="date" id="data" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition" onchange="validarData()">
+                            <p id="dataErro" class="text-red-500 text-xs mt-1 hidden">❌ Domingos não são permitidos. Escolha Seg-Sáb.</p>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-2">Horário</label>
+                            <select id="hora" required class="w-full px-4 py-3 rounded-xl border border-pink-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition bg-white">
+                                <option value="">Selecione a data primeiro</option>
+                            </select>
+                            <p id="horaErro" class="text-red-500 text-xs mt-1 hidden">❌ Horário fora do expediente (08:00-18:00).</p>
+                        </div>
                     </div>
-                    <button type="submit" class="w-full py-4 rounded-xl gold-bg text-white font-bold text-lg hover:shadow-xl hover:scale-105 transition transform flex items-center justify-center gap-2 shimmer"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Finalizar e Pagar Agendamento</button>
+                    <button type="submit" class="w-full py-4 rounded-xl gold-bg text-white font-bold text-lg hover:shadow-xl hover:scale-105 transition transform flex items-center justify-center gap-2 shimmer"><svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>Finalizar e Salvar Agendamento</button>
                 </form>
             </div>
         </div>
     </section>
 
+    <!-- ADMIN MODAL -->
     <div id="adminOverlay" class="admin-overlay">
         <div class="admin-modal">
             <div style="background:#1e293b; padding: 16px 24px; display:flex; align-items:center; justify-content:space-between; border-bottom: 1px solid #334155; flex-shrink:0;">
@@ -395,8 +414,9 @@
                     <i class="fas fa-times"></i>
                 </button>
             </div>
-
+            
             <div style="display:flex; flex:1; overflow:hidden;">
+                <!-- Sidebar -->
                 <div class="admin-sidebar" style="padding:16px; overflow-y:auto; flex-shrink:0;">
                     <p style="color:#475569; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; padding: 0 4px;">NAVEGAÇÃO</p>
                     <div class="nav-item active" id="nav-dashboard" onclick="switchAdminTab('dashboard')"><i class="fas fa-th-large"></i> Dashboard</div>
@@ -407,19 +427,16 @@
                         <p style="color:#475569; font-size:10px; font-weight:700; letter-spacing:1px; text-transform:uppercase; margin-bottom:10px; padding: 0 4px;">CONTA</p>
                         <div class="nav-item" onclick="clearAllData()"><i class="fas fa-trash-alt" style="color:#ef4444;"></i> <span style="color:#ef4444;">Limpar Dados</span></div>
                     </div>
-                    <div style="margin-top:auto; padding-top:24px; display: none !important;">
-                        <div style="background:#1a2744; border-radius:12px; padding:14px; border:1px solid #334155;">
-                            <div style="color:#94a3b8; font-size:11px; margin-bottom:6px;"><i class="fas fa-info-circle text-pink-400 mr-1"></i> Plano Ativo</div>
-                            <div style="color:#f1f5f9; font-weight:800; font-size:16px;">R$ 130<span style="color:#64748b; font-size:12px;">/mês</span></div>
-                            <div style="color:#10b981; font-size:11px; margin-top:2px;">Gestão Mensal — Ativo</div>
-                        </div>
-                    </div>
                 </div>
-
+                
+                <!-- Main Content Panel -->
                 <div class="admin-content" style="padding:24px;">
+                    <!-- Dashboard Section -->
                     <div id="panel-dashboard" class="section-panel active">
                         <h2 style="color:#f1f5f9; font-size:20px; font-weight:800; margin-bottom:6px;">Visão Geral</h2>
                         <p style="color:#64748b; font-size:13px; margin-bottom:24px;">Resumo completo da sua clínica hoje</p>
+                        
+                        <!-- KPIs -->
                         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap:16px; margin-bottom:28px;">
                             <div style="background:linear-gradient(135deg,#ff1493,#ff69b4); border-radius:16px; padding:20px; position:relative; overflow:hidden;">
                                 <div style="position:absolute; top:-10px; right:-10px; width:70px; height:70px; background:rgba(255,255,255,0.1); border-radius:50%;"></div>
@@ -446,8 +463,9 @@
                                 <div style="color:rgba(255,255,255,0.7); font-size:11px; margin-top:4px;">Repor estoque</div>
                             </div>
                         </div>
-
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px; margin-bottom:24px;">
+                        
+                        <!-- Charts Section -->
+                        <div style="display:grid; grid-template-columns: 1fr; gap:20px; margin-bottom:24px;" class="lg:grid-cols-2">
                             <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155;">
                                 <div style="color:#f1f5f9; font-weight:700; font-size:14px; margin-bottom:4px;"><i class="fas fa-chart-bar mr-2" style="color:#ff69b4;"></i>Serviços Mais Agendados</div>
                                 <div style="color:#475569; font-size:11px; margin-bottom:16px;">Distribuição por procedimento</div>
@@ -455,11 +473,12 @@
                             </div>
                             <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155;">
                                 <div style="color:#f1f5f9; font-weight:700; font-size:14px; margin-bottom:4px;"><i class="fas fa-chart-line mr-2" style="color:#6366f1;"></i>Agendamentos por Mês</div>
-                                <div style="color:#475569; font-size:11px; margin-bottom:16px;">Evolução dos últimos 6 meses</div>
+                                <div style="color:#475569; font-size:11px; margin-bottom:16px;">Evolução dos últimos meses</div>
                                 <div style="height:220px; position:relative;"><canvas id="chartMeses"></canvas></div>
                             </div>
                         </div>
 
+                        <!-- Next Bookings -->
                         <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155;">
                             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px;">
                                 <div>
@@ -468,10 +487,11 @@
                                 </div>
                                 <button class="btn-primary" onclick="switchAdminTab('agendamentos')" style="font-size:11px; padding:6px 14px;">Ver todos</button>
                             </div>
-                            <div id="dashboardAgendList"></div>
+                            <div id="dashboardAgendList" class="space-y-3"></div>
                         </div>
                     </div>
 
+                    <!-- Bookings Section -->
                     <div id="panel-agendamentos" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -483,8 +503,8 @@
                                 <button class="btn-danger" onclick="clearAgendamentos()" style="white-space:nowrap;"><i class="fas fa-trash mr-1"></i>Limpar tudo</button>
                             </div>
                         </div>
-                        <div style="background:#1e293b; border-radius:16px; overflow:hidden; border:1px solid #334155;">
-                            <table style="width:100%; border-collapse:collapse;">
+                        <div style="background:#1e293b; border-radius:16px; overflow:hidden; border:1px solid #334155; overflow-x: auto;">
+                            <table style="width:100%; border-collapse:collapse; min-width: 600px;">
                                 <thead>
                                     <tr style="background:#0f172a;">
                                         <th style="padding:14px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;">Data / Hora</th>
@@ -499,6 +519,7 @@
                         </div>
                     </div>
 
+                    <!-- Finance Section -->
                     <div id="panel-financeiro" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -510,17 +531,19 @@
                             </div>
                         </div>
 
+                        <!-- Finance mini cards -->
                         <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap:14px; margin-bottom:24px;">
-                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-arrow-up mr-1" style="color:#10b981;"></i>RECEITA TOTAL</div><div id="fin-receita-total" style="color:#10b981; font-size:22px; font-weight:900;">R$ 0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Baseado nos agendamentos</div></div>
-                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-calendar mr-1" style="color:#6366f1;"></i>TICKET MÉDIO</div><div id="fin-ticket" style="color:#6366f1; font-size:22px; font-weight:900;">R$ 0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Por atendimento</div></div>
-                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-users mr-1" style="color:#f59e0b;"></i>CLIENTES ATEND.</div><div id="fin-clientes" style="color:#f59e0b; font-size:22px; font-weight:900;">0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Total de atendimentos</div></div>
-                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-star mr-1" style="color:#ff69b4;"></i>SERV. MAIS LUCRATIVO</div><div id="fin-top-service" style="color:#ff69b4; font-size:14px; font-weight:800; line-height:1.3;">—</div><div style="color:#475569; font-size:10px; margin-top:2px;">Por volume</div></div>
+                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-arrow-up mr-1" style="color:#10b981;"></i>RECEITA TOTAL</div><div id="fin-receita-total" style="color:#10b981; font-size:22px; font-weight:900;">R$ 0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Faturamento consolidado</div></div>
+                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-calendar-alt mr-1" style="color:#6366f1;"></i>TICKET MÉDIO</div><div id="fin-ticket" style="color:#6366f1; font-size:22px; font-weight:900;">R$ 0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Por atendimento</div></div>
+                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-users mr-1" style="color:#f59e0b;"></i>CLIENTES ATEND.</div><div id="fin-clientes" style="color:#f59e0b; font-size:22px; font-weight:900;">0</div><div style="color:#475569; font-size:10px; margin-top:2px;">Total de agendamentos</div></div>
+                            <div class="metric-mini"><div style="color:#64748b; font-size:11px; font-weight:600; margin-bottom:6px;"><i class="fas fa-star mr-1" style="color:#ff69b4;"></i>SERV. MAIS LUCRATIVO</div><div id="fin-top-service" style="color:#ff69b4; font-size:13px; font-weight:800; line-height:1.3; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">—</div><div style="color:#475569; font-size:10px; margin-top:2px;">Por volume</div></div>
                         </div>
 
-                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px; margin-bottom:24px;">
+                        <!-- Finance Charts -->
+                        <div style="display:grid; grid-template-columns: 1fr; gap:20px; margin-bottom:24px;" class="lg:grid-cols-2">
                             <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155;">
                                 <div style="color:#f1f5f9; font-weight:700; font-size:14px; margin-bottom:4px;"><i class="fas fa-chart-bar mr-2" style="color:#10b981;"></i>Receita por Serviço</div>
-                                <div style="color:#475569; font-size:11px; margin-bottom:16px;">Valor estimado por procedimento</div>
+                                <div style="color:#475569; font-size:11px; margin-bottom:16px;">Valor acumulado por procedimento</div>
                                 <div style="height:240px; position:relative;"><canvas id="chartReceitaServico"></canvas></div>
                             </div>
                             <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155;">
@@ -530,16 +553,11 @@
                             </div>
                         </div>
 
-                        <div style="background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155; margin-bottom:24px;">
-                            <div style="color:#f1f5f9; font-weight:700; font-size:14px; margin-bottom:4px;"><i class="fas fa-chart-area mr-2" style="color:#ff69b4;"></i>Evolução da Receita — Últimos 6 Meses</div>
-                            <div style="color:#475569; font-size:11px; margin-bottom:16px;">Tendência de crescimento do negócio</div>
-                            <div style="height:260px; position:relative;"><canvas id="chartEvolucao"></canvas></div>
-                        </div>
-
+                        <!-- Manual transactions list -->
                         <div style="background:#1e293b; border-radius:16px; border:1px solid #334155; overflow:hidden;">
                             <div style="padding:16px 20px; border-bottom:1px solid #334155; display:flex; justify-content:space-between; align-items:center;">
                                 <div style="color:#f1f5f9; font-weight:700; font-size:14px;"><i class="fas fa-list mr-2" style="color:#f59e0b;"></i>Lançamentos Manuais</div>
-                                <span style="color:#475569; font-size:11px;" id="countLancamentos">0 registros</span>
+                                <span style="color:#64748b; font-size:11px;" id="countLancamentos">0 registros</span>
                             </div>
                             <div id="formLancamento" style="display:none; padding:16px 20px; border-bottom:1px solid #334155; background:#0f172a;">
                                 <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end;">
@@ -550,21 +568,24 @@
                                     <button class="btn-ghost" onclick="document.getElementById('formLancamento').style.display='none'" style="padding:8px 14px;">Cancelar</button>
                                 </div>
                             </div>
-                            <table style="width:100%; border-collapse:collapse;">
-                                <thead>
-                                    <tr style="background:#0f172a;">
-                                        <th style="padding:12px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700;">DATA</th>
-                                        <th style="padding:12px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700;">DESCRIÇÃO</th>
-                                        <th style="padding:12px 16px; text-align:center; color:#64748b; font-size:11px; font-weight:700;">TIPO</th>
-                                        <th style="padding:12px 16px; text-align:right; color:#64748b; font-size:11px; font-weight:700;">VALOR</th>
-                                        <th style="padding:12px 16px; text-align:center; color:#64748b; font-size:11px; font-weight:700;">AÇÃO</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="tabelaLancamentos"></tbody>
-                            </table>
+                            <div style="overflow-x: auto;">
+                                <table style="width:100%; border-collapse:collapse; min-width: 500px;">
+                                    <thead>
+                                        <tr style="background:#0f172a;">
+                                            <th style="padding:12px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700;">DATA</th>
+                                            <th style="padding:12px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700;">DESCRIÇÃO</th>
+                                            <th style="padding:12px 16px; text-align:center; color:#64748b; font-size:11px; font-weight:700;">TIPO</th>
+                                            <th style="padding:12px 16px; text-align:right; color:#64748b; font-size:11px; font-weight:700;">VALOR</th>
+                                            <th style="padding:12px 16px; text-align:center; color:#64748b; font-size:11px; font-weight:700;">AÇÃO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tabelaLancamentos"></tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Stock Section -->
                     <div id="panel-estoque" class="section-panel">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:20px; flex-wrap:wrap; gap:12px;">
                             <div>
@@ -579,6 +600,8 @@
                             <div style="color:#475569; font-size:11px; margin-bottom:16px;">Quantidade atual de cada item</div>
                             <div style="height:220px; position:relative;"><canvas id="chartEstoque"></canvas></div>
                         </div>
+                        
+                        <!-- Add Product Form overlay -->
                         <div id="addProductForm" style="display:none; background:#1e293b; border-radius:16px; padding:20px; border:1px solid #334155; margin-bottom:20px;">
                             <div style="color:#f1f5f9; font-weight:700; font-size:14px; margin-bottom:16px;"><i class="fas fa-box-open mr-2" style="color:#10b981;"></i>Novo Produto</div>
                             <div style="display:flex; gap:12px; flex-wrap:wrap; align-items:flex-end;">
@@ -589,8 +612,9 @@
                                 <button class="btn-ghost" onclick="closeAddProduct()">Cancelar</button>
                             </div>
                         </div>
-                        <div style="background:#1e293b; border-radius:16px; overflow:hidden; border:1px solid #334155;">
-                            <table style="width:100%; border-collapse:collapse;">
+                        
+                        <div style="background:#1e293b; border-radius:16px; overflow:hidden; border:1px solid #334155; overflow-x: auto;">
+                            <table style="width:100%; border-collapse:collapse; min-width: 550px;">
                                 <thead>
                                     <tr style="background:#0f172a;">
                                         <th style="padding:14px 16px; text-align:left; color:#64748b; font-size:11px; font-weight:700; letter-spacing:0.5px; text-transform:uppercase;">Produto</th>
@@ -609,5 +633,745 @@
         </div>
     </div>
 
-    <div id="toast" class="fixed top-4 right-4 bg-white rounded-xl shadow-xl px-5 py-3 flex items-center gap-3 translate-x-full transition-transform duration-300 z-[200] border border-slate-100">
-        <i id
+    <!-- TOAST NOTIFICATION CONTAINER -->
+    <div id="toast" class="fixed top-4 right-4 bg-white rounded-xl shadow-xl px-5 py-3 flex items-center gap-3 translate-x-full transition-transform duration-300 z-[200] border border-pink-200">
+        <div id="toast-icon" class="w-8 h-8 rounded-full flex items-center justify-center"></div>
+        <div>
+            <div id="toast-title" class="font-bold text-sm text-slate-800"></div>
+            <div id="toast-msg" class="text-xs text-slate-500"></div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT CONTROLLERS -->
+    <script>
+        // Precos dos procedimentos
+        const precosServicos = {
+            "Limpeza de Pele Profunda": 120,
+            "Drenagem Linfática Corporal": 150,
+            "Massagem Modeladora Redutora": 160,
+            "Aplicação de Botox (Região)": 350,
+            "Peeling Químico Renovador": 200,
+            "Carboxiterapia para Celulite": 180
+        };
+
+        // Estado em memória (In-memory persistent mock state)
+        let agendamentos = JSON.parse(localStorage.getItem('agendamentos')) || [
+            { id: 1, data: '2026-07-15', hora: '09:00', cliente: 'Mariana Silva', servico: 'Limpeza de Pele Profunda', telefone: '(11) 98765-4321', valor: 120 },
+            { id: 2, data: '2026-07-16', hora: '14:30', cliente: 'Camila Rodrigues', servico: 'Drenagem Linfática Corporal', telefone: '(11) 99999-8888', valor: 150 },
+            { id: 3, data: '2026-07-16', hora: '16:00', cliente: 'Amanda Sousa', servico: 'Aplicação de Botox (Região)', telefone: '(11) 97777-6666', valor: 350 }
+        ];
+
+        let produtos = JSON.parse(localStorage.getItem('produtos')) || [
+            { id: 1, nome: 'Creme Hidratante Facial', qtd: 15, status: 'Disponível' },
+            { id: 2, nome: 'Sérum de Vitamina C 30ml', qtd: 2, status: 'Alerta de Reposição' },
+            { id: 3, nome: 'Ácido Hialurônico Concentrado', qtd: 8, status: 'Disponível' },
+            { id: 4, nome: 'Tônico Purificante Pro', qtd: 0, status: 'Esgotado' }
+        ];
+
+        let lancamentos = JSON.parse(localStorage.getItem('lancamentos')) || [
+            { id: 1, data: '2026-07-10', descricao: 'Aluguel de Aparelho Laser', tipo: 'Despesa', valor: 450 }
+        ];
+
+        // ChartJS instances
+        let chartServicosObj = null;
+        let chartMesesObj = null;
+        let chartReceitaServicoObj = null;
+        let chartDistribuicaoObj = null;
+        let chartEstoqueObj = null;
+
+        window.onload = function() {
+            // Inicializar inputs e listagens
+            definirDataMinimaForm();
+            renderDashboard();
+            renderAgendamentos();
+            renderFinanceiro();
+            renderEstoque();
+            
+            // Set data corrente no topo do painel admin
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            document.getElementById('adminCurrentDate').innerText = new Date().toLocaleDateString('pt-BR', options);
+        };
+
+        // Salvar estado no localStorage local
+        function saveState() {
+            localStorage.setItem('agendamentos', JSON.stringify(agendamentos));
+            localStorage.setItem('produtos', JSON.stringify(produtos));
+            localStorage.setItem('lancamentos', JSON.stringify(lancamentos));
+        }
+
+        // Definir data mínima para agendamento (hoje)
+        function definirDataMinimaForm() {
+            const dataInput = document.getElementById('data');
+            const hoje = new Date().toISOString().split('T')[0];
+            dataInput.min = hoje;
+        }
+
+        // Validação dinâmica do formulário de agendamento (Sem domingos)
+        function validarData() {
+            const dateVal = document.getElementById('data').value;
+            const erroMsg = document.getElementById('dataErro');
+            const horaSelect = document.getElementById('hora');
+            
+            if (!dateVal) return;
+            
+            const dateObj = new Date(dateVal + 'T00:00:00');
+            const diaSemana = dateObj.getDay(); // 0 = Domingo
+            
+            if (diaSemana === 0) {
+                erroMsg.classList.remove('hidden');
+                document.getElementById('data').value = "";
+                horaSelect.innerHTML = '<option value="">Selecione uma data válida</option>';
+            } else {
+                erroMsg.classList.add('hidden');
+                // Popula horários válidos (8h às 18h)
+                popularHorariosExpediente();
+            }
+        }
+
+        function popularHorariosExpediente() {
+            const select = document.getElementById('hora');
+            select.innerHTML = '<option value="">Selecione</option>';
+            
+            // Expediente das 08:00 às 18:00
+            for (let h = 8; h <= 18; h++) {
+                const hStr = h < 10 ? '0' + h : h;
+                select.add(new Option(`${hStr}:00`, `${hStr}:00`));
+                if (h < 18) {
+                    select.add(new Option(`${hStr}:30`, `${hStr}:30`));
+                }
+            }
+        }
+
+        // Controladores de Visibilidade de Telas
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        function toggleAdmin() {
+            const overlay = document.getElementById('adminOverlay');
+            overlay.classList.toggle('active');
+            
+            if (overlay.classList.contains('active')) {
+                // Atualiza todo o painel ao abrir
+                renderDashboard();
+                renderAgendamentos();
+                renderFinanceiro();
+                renderEstoque();
+                
+                // Forçar recálculo e renderização de todos os gráficos
+                setTimeout(inicializarGraficos, 100);
+            }
+        }
+
+        function switchAdminTab(tab) {
+            // Desativa abas ativas
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            document.querySelectorAll('.section-panel').forEach(panel => panel.classList.remove('active'));
+            
+            // Ativa selecionada
+            document.getElementById(`nav-${tab}`).classList.add('active');
+            document.getElementById(`panel-${tab}`).classList.add('active');
+            
+            // Recarrega gráficos se aplicável
+            if (tab === 'dashboard' || tab === 'financeiro' || tab === 'estoque') {
+                setTimeout(inicializarGraficos, 50);
+            }
+        }
+
+        // Sistema de Notificações Toast
+        function showToast(title, message, isSuccess = true) {
+            const toast = document.getElementById('toast');
+            const icon = document.getElementById('toast-icon');
+            const titleEl = document.getElementById('toast-title');
+            const msgEl = document.getElementById('toast-msg');
+            
+            titleEl.innerText = title;
+            msgEl.innerText = message;
+            
+            if (isSuccess) {
+                icon.className = "w-8 h-8 rounded-full flex items-center justify-center bg-emerald-100 text-emerald-600";
+                icon.innerHTML = '<i class="fas fa-check"></i>';
+                toast.classList.replace('border-red-200', 'border-pink-200');
+            } else {
+                icon.className = "w-8 h-8 rounded-full flex items-center justify-center bg-red-100 text-red-600";
+                icon.innerHTML = '<i class="fas fa-exclamation"></i>';
+                toast.classList.add('border-red-200');
+            }
+            
+            toast.classList.remove('translate-x-full');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-x-full');
+            }, 4000);
+        }
+
+        // Manipulação de Agendamentos (Formulário do Site)
+        function handleAgendamento(e) {
+            e.preventDefault();
+            
+            const nome = document.getElementById('nome').value.trim();
+            const telefone = document.getElementById('telefone').value.trim();
+            const procedimento = document.getElementById('procedimento').value;
+            const data = document.getElementById('data').value;
+            const hora = document.getElementById('hora').value;
+            
+            if (!nome || !telefone || !procedimento || !data || !hora) {
+                showToast("Erro", "Por favor, preencha todos os campos obrigatórios.", false);
+                return;
+            }
+
+            const valor = precosServicos[procedimento] || 0;
+            const novoAgendamento = {
+                id: agendamentos.length > 0 ? Math.max(...agendamentos.map(a => a.id)) + 1 : 1,
+                data,
+                hora,
+                cliente: nome,
+                servico: procedimento,
+                telefone,
+                valor
+            };
+            
+            agendamentos.push(novoAgendamento);
+            saveState();
+            
+            // Limpa form
+            document.getElementById('agendamentoForm').reset();
+            document.getElementById('hora').innerHTML = '<option value="">Selecione</option>';
+            
+            showToast("Sucesso!", `Horário de ${nome} reservado com sucesso!`, true);
+            
+            // Envia link para redirecionar whatsapp se desejar
+            const msgZap = `Olá! Realizei meu agendamento no site:\n👤 Nome: ${nome}\n💇‍♀️ Procedimento: ${procedimento}\n📅 Data: ${data.split('-').reverse().join('/')}\n⏰ Horário: ${hora}\n💵 Valor: R$ ${valor},00.\n\nAguardo confirmação!`;
+            window.open(`https://wa.me/5511957130312?text=${encodeURIComponent(msgZap)}`, '_blank');
+            
+            // Recarrega telas
+            renderDashboard();
+            renderAgendamentos();
+            renderFinanceiro();
+        }
+
+        // Renderização: DASHBOARD
+        function renderDashboard() {
+            // Atualizar contadores
+            const totalAgendamentos = agendamentos.length;
+            const receitaEstimada = agendamentos.reduce((acc, a) => acc + (a.valor || 0), 0);
+            const totalProdutos = produtos.reduce((acc, p) => acc + parseInt(p.qtd || 0), 0);
+            const alertasEstoque = produtos.filter(p => p.qtd <= 3).length;
+            
+            document.getElementById('kpi-agendamentos').innerText = totalAgendamentos;
+            document.getElementById('kpi-receita').innerText = `R$ ${receitaEstimada}`;
+            document.getElementById('kpi-produtos').innerText = totalProdutos;
+            document.getElementById('kpi-alertas').innerText = alertasEstoque;
+            
+            // Atualizar Badges de Notificação da Sidebar
+            document.getElementById('badgeAgend').innerText = totalAgendamentos;
+            document.getElementById('badgeEstoque').innerText = alertasEstoque;
+            document.getElementById('badgeEstoque').style.display = alertasEstoque > 0 ? 'inline-block' : 'none';
+            
+            // Próximos agendamentos recentes
+            const listContainer = document.getElementById('dashboardAgendList');
+            listContainer.innerHTML = '';
+            
+            // Ordenar por data/hora mais recente
+            const agendOrdenados = [...agendamentos].sort((a, b) => new Date(`${a.data}T${a.hora}`) - new Date(`${b.data}T${b.hora}`));
+            
+            if (agendOrdenados.length === 0) {
+                listContainer.innerHTML = '<p class="text-slate-500 text-xs text-center py-4">Nenhum agendamento futuro registrado.</p>';
+                return;
+            }
+            
+            agendOrdenados.slice(0, 3).forEach(a => {
+                const dateBr = a.data.split('-').reverse().join('/');
+                listContainer.innerHTML += `
+                    <div class="flex items-center justify-between p-3.5 bg-slate-800/50 rounded-xl border border-slate-700/50 hover:border-pink-500/40 transition">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 bg-pink-500/10 text-pink-400 rounded-lg flex items-center justify-center font-bold text-xs">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs font-bold text-slate-200">${a.cliente}</div>
+                                <div class="text-[10px] text-slate-500">${a.servico} — <span class="text-pink-400 font-bold">R$ ${a.valor}</span></div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-[11px] font-bold text-emerald-400">${a.hora}</div>
+                            <div class="text-[9px] text-slate-500">${dateBr}</div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        // Renderização: TABELA AGENDAMENTOS
+        function renderAgendamentos() {
+            const tableBody = document.getElementById('tabelaAgendamentos');
+            const searchVal = document.getElementById('searchAgend').value.toLowerCase();
+            tableBody.innerHTML = '';
+            
+            let agendFiltrados = agendamentos;
+            if (searchVal) {
+                agendFiltrados = agendamentos.filter(a => a.cliente.toLowerCase().includes(searchVal) || a.servico.toLowerCase().includes(searchVal));
+            }
+            
+            document.getElementById('countAgendamentos').innerText = `${agendFiltrados.length} registros`;
+            
+            if (agendFiltrados.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" class="text-slate-500 text-xs text-center py-8">Nenhum registro localizado.</td></tr>`;
+                return;
+            }
+            
+            // Ordena os agendamentos pela proximidade de data
+            agendFiltrados.sort((a,b) => new Date(`${a.data}T${a.hora}`) - new Date(`${b.data}T${b.hora}`));
+            
+            agendFiltrados.forEach(a => {
+                const dateBr = a.data.split('-').reverse().join('/');
+                tableBody.innerHTML += `
+                    <tr class="table-row border-b border-slate-800">
+                        <td style="padding:14px 16px; color:#f1f5f9; font-size:13px;" class="font-bold">
+                            <span class="text-emerald-400 block">${a.hora}</span>
+                            <span class="text-xs text-slate-500">${dateBr}</span>
+                        </td>
+                        <td style="padding:14px 16px; color:#94a3b8; font-size:13px;" class="font-medium text-slate-200">${a.cliente}</td>
+                        <td style="padding:14px 16px; color:#94a3b8; font-size:13px;">
+                            <span class="bg-slate-800 text-slate-300 text-[11px] px-2.5 py-1 rounded-full border border-slate-700 font-bold">${a.servico}</span>
+                        </td>
+                        <td style="padding:14px 16px; color:#94a3b8; font-size:13px;">
+                            <a href="https://wa.me/${a.telefone.replace(/\D/g, '')}" target="_blank" class="hover:text-emerald-400 flex items-center gap-1.5 transition">
+                                <i class="fab fa-whatsapp text-emerald-500 text-base"></i> ${a.telefone}
+                            </a>
+                        </td>
+                        <td style="padding:14px 16px; text-align:center;">
+                            <button onclick="deletarAgendamento(${a.id})" class="btn-danger hover:bg-red-700 transition" style="padding:4px 10px; font-size:11px;">
+                                <i class="fas fa-trash-alt"></i> Excluir
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        function deletarAgendamento(id) {
+            agendamentos = agendamentos.filter(a => a.id !== id);
+            saveState();
+            showToast("Excluído", "Agendamento removido com sucesso.");
+            renderDashboard();
+            renderAgendamentos();
+            renderFinanceiro();
+            inicializarGraficos();
+        }
+
+        function clearAgendamentos() {
+            if (confirm("Tem certeza que deseja apagar TODOS os agendamentos? Esta ação não pode ser desfeita.")) {
+                agendamentos = [];
+                saveState();
+                showToast("Reiniciado", "Todos os agendamentos foram excluídos.");
+                renderDashboard();
+                renderAgendamentos();
+                renderFinanceiro();
+                inicializarGraficos();
+            }
+        }
+
+        // Renderização: TABELA FINANCEIRO
+        function renderFinanceiro() {
+            // Cálculos financeiros
+            const receitaEst = agendamentos.reduce((acc, a) => acc + (a.valor || 0), 0);
+            
+            // Somar lançamentos manuais
+            const recManuais = lancamentos.filter(l => l.tipo === 'Receita').reduce((acc, l) => acc + (parseFloat(l.valor) || 0), 0);
+            const desManuais = lancamentos.filter(l => l.tipo === 'Despesa').reduce((acc, l) => acc + (parseFloat(l.valor) || 0), 0);
+            
+            const receitaTotal = receitaEst + recManuais - desManuais;
+            const ticketMedio = agendamentos.length > 0 ? (receitaEst / agendamentos.length).toFixed(2) : 0;
+            
+            document.getElementById('fin-receita-total').innerText = `R$ ${receitaTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+            document.getElementById('fin-ticket').innerText = `R$ ${parseFloat(ticketMedio).toLocaleString('pt-BR', { minimumFractionDigits: 2 })}`;
+            document.getElementById('fin-clientes').innerText = agendamentos.length;
+            
+            // Serviço mais lucrativo
+            const contagemServicos = {};
+            agendamentos.forEach(a => {
+                contagemServicos[a.servico] = (contagemServicos[a.servico] || 0) + (a.valor || 0);
+            });
+            let topServ = "—";
+            let maxLucro = 0;
+            for (let serv in contagemServicos) {
+                if (contagemServicos[serv] > maxLucro) {
+                    maxLucro = contagemServicos[serv];
+                    topServ = serv;
+                }
+            }
+            document.getElementById('fin-top-service').innerText = topServ;
+
+            // Renderização da tabela de lançamentos manuais
+            const tableBody = document.getElementById('tabelaLancamentos');
+            tableBody.innerHTML = '';
+            
+            document.getElementById('countLancamentos').innerText = `${lancamentos.length} registros`;
+            
+            if (lancamentos.length === 0) {
+                tableBody.innerHTML = `<tr><td colspan="5" class="text-slate-500 text-xs text-center py-6">Nenhum lançamento manual efetuado.</td></tr>`;
+                return;
+            }
+            
+            lancamentos.forEach(l => {
+                const dateBr = l.data.split('-').reverse().join('/');
+                const badgeClass = l.tipo === 'Receita' ? 'status-ok' : 'status-danger';
+                const valorBr = parseFloat(l.valor).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+                
+                tableBody.innerHTML += `
+                    <tr class="table-row border-b border-slate-800">
+                        <td style="padding:12px 16px; color:#94a3b8; font-size:12px;">${dateBr}</td>
+                        <td style="padding:12px 16px; color:#f1f5f9; font-size:12px;" class="font-bold">${l.descricao}</td>
+                        <td style="padding:12px 16px; text-align:center;">
+                            <span class="status-badge ${badgeClass}">${l.tipo === 'Receita' ? '💰 Receita' : '💸 Despesa'}</span>
+                        </td>
+                        <td style="padding:12px 16px; text-align:right; color:${l.tipo === 'Receita' ? '#10b981' : '#ef4444'}; font-size:12px;" class="font-bold">
+                            ${l.tipo === 'Receita' ? '+' : '-'} ${valorBr}
+                        </td>
+                        <td style="padding:12px 16px; text-align:center;">
+                            <button onclick="deletarLancamento(${l.id})" style="background:transparent; border:none; color:#ef4444; cursor:pointer;" class="hover:text-red-500 text-xs">
+                                <i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            });
+        }
+
+        function addFinanceRecord() {
+            const form = document.getElementById('formLancamento');
+            form.style.display = form.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function saveLancamento() {
+            const desc = document.getElementById('lancDesc').value.trim();
+            const valor = parseFloat(document.getElementById('lancValor').value);
+            const tipo = document.getElementById('lancTipo').value;
+            const dataVal = new Date().toISOString().split('T')[0];
+            
+            if (!desc || isNaN(valor) || valor <= 0) {
+                showToast("Erro de Input", "Descrição e valor válido são obrigatórios.", false);
+                return;
+            }
+            
+            const novoLanc = {
+                id: lancamentos.length > 0 ? Math.max(...lancamentos.map(l => l.id)) + 1 : 1,
+                data: dataVal,
+                descricao: desc,
+                tipo,
+                valor
+            };
+            
+            lancamentos.push(novoLanc);
+            saveState();
+            
+            document.getElementById('lancDesc').value = '';
+            document.getElementById('lancValor').value = '';
+            document.getElementById('formLancamento').style.display = 'none';
+            
+            showToast("Sucesso", "Lançamento manual registrado!");
+            renderFinanceiro();
+            inicializarGraficos();
+        }
+
+        function deletarLancamento(id) {
+            lancamentos = lancamentos.filter(l => l.id !== id);
+            saveState();
+            showToast("Deletado", "Lançamento excluído com sucesso.");
+            renderFinanceiro();
+            inicializarGraficos();
+        }
+
+        // Renderização: TABELA ESTOQUE
+        function renderEstoque() {
+            const tableBody = document.getElementById('tabelaEstoque');
+            const alertContainer = document.getElementById('estoqueAlertas');
+            tableBody.innerHTML = '';
+            alertContainer.innerHTML = '';
+            
+            const produtosAlerta = produtos.filter(p => p.qtd <= 3);
+            
+            if (produtosAlerta.length > 0) {
+                let alertHtml = `<div class="p-4 bg-amber-500/15 border border-amber-500/30 rounded-2xl flex flex-col gap-2 mb-6">`;
+                alertHtml += `<div class="text-amber-400 font-bold text-sm"><i class="fas fa-exclamation-triangle mr-2"></i>Atenção: Itens em níveis críticos de estoque!</div>`;
+                alertHtml += `<p class="text-slate-300 text-xs">Os seguintes produtos necessitam de reposição imediata para evitar prejuízo nos atendimentos:</p><ul class="list-disc pl-5 text-xs text-amber-200">`;
+                produtosAlerta.forEach(p => {
+                    alertHtml += `<li><strong>${p.nome}</strong>: Restam apenas ${p.qtd} unidades</li>`;
+                });
+                alertHtml += `</ul></div>`;
+                alertContainer.innerHTML = alertHtml;
+            }
+
+            produtos.forEach(p => {
+                let statusClass = "status-ok";
+                let progressoColor = "bg-gradient-to-r from-pink-500 to-rose-400";
+                
+                if (p.qtd <= 3 && p.qtd > 0) {
+                    statusClass = "status-alert";
+                    progressoColor = "bg-amber-500";
+                } else if (p.qtd === 0) {
+                    statusClass = "status-danger";
+                    progressoColor = "bg-red-500";
+                }
+                
+                // Mapear porcentagem de barra de progresso (Max. considerado: 25)
+                const percent = Math.min(100, (p.qtd / 25) * 100);
+                
+                tableBody.innerHTML += `
+                    <tr class="table-row border-b border-slate-800">
+                        <td style="padding:14px 16px; color:#f1f5f9; font-size:13px;" class="font-bold">${p.nome}</td>
+                        <td style="padding:14px 16px; text-align:center; color:#94a3b8; font-size:13px;">
+                            <div style="display:flex; align-items:center; justify-content:center; gap:6px;">
+                                <button onclick="ajustarEstoque(${p.id}, -1)" class="btn-ghost" style="padding:2px 8px; font-size:10px;">-</button>
+                                <span class="text-white font-bold px-1">${p.qtd}</span>
+                                <button onclick="ajustarEstoque(${p.id}, 1)" class="btn-ghost" style="padding:2px 8px; font-size:10px;">+</button>
+                            </div>
+                        </td>
+                        <td style="padding:14px 16px; width:160px;">
+                            <div class="progress-bar">
+                                <div class="progress-fill ${progressoColor}" style="width: ${percent}%"></div>
+                            </div>
+                        </td>
+                        <td style="padding:14px 16px; text-align:center;">
+                            <span class="status-badge ${statusClass}">${p.qtd === 0 ? '❌ Esgotado' : p.qtd <= 3 ? '⚠️ Alerta' : '✅ Ativo'}</span>
+                        </td>
+                        <td style="padding:14px 16px; text-align:center;">
+                            <button onclick="deletarProduto(${p.id})" style="background:transparent; border:none; color:#ef4444;" class="hover:text-red-500">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </td>
+                    </tr>
+                `;
+            });
+            
+            renderDashboard(); // atualiza o KPI do dashboard
+        }
+
+        function ajustarEstoque(id, alteracao) {
+            const index = produtos.findIndex(p => p.id === id);
+            if (index !== -1) {
+                produtos[index].qtd = Math.max(0, produtos[index].qtd + alteracao);
+                produtos[index].status = produtos[index].qtd === 0 ? 'Esgotado' : produtos[index].qtd <= 3 ? 'Alerta de Reposição' : 'Disponível';
+                saveState();
+                renderEstoque();
+                inicializarGraficos();
+            }
+        }
+
+        function openAddProduct() {
+            document.getElementById('addProductForm').style.display = 'block';
+        }
+
+        function closeAddProduct() {
+            document.getElementById('addProductForm').style.display = 'none';
+        }
+
+        function addProduct() {
+            const nome = document.getElementById('produtoNome').value.trim();
+            const qtd = parseInt(document.getElementById('produtoQtd').value);
+            const status = document.getElementById('produtoStatus').value;
+            
+            if (!nome || isNaN(qtd) || qtd < 0) {
+                showToast("Erro de Input", "Preencha o nome do produto e quantidade de forma válida.", false);
+                return;
+            }
+            
+            const novoProd = {
+                id: produtos.length > 0 ? Math.max(...produtos.map(p => p.id)) + 1 : 1,
+                nome,
+                qtd,
+                status: qtd === 0 ? 'Esgotado' : qtd <= 3 ? 'Alerta de Reposição' : 'Disponível'
+            };
+            
+            produtos.push(novoProd);
+            saveState();
+            
+            document.getElementById('produtoNome').value = '';
+            document.getElementById('produtoQtd').value = '0';
+            closeAddProduct();
+            showToast("Sucesso", "Novo produto inserido ao estoque!");
+            renderEstoque();
+            inicializarGraficos();
+        }
+
+        function deletarProduto(id) {
+            produtos = produtos.filter(p => p.id !== id);
+            saveState();
+            showToast("Deletado", "Produto removido do estoque.");
+            renderEstoque();
+            inicializarGraficos();
+        }
+
+        function clearAllData() {
+            if (confirm("ATENÇÃO: Deseja apagar de fato todos os dados de agendamentos, estoque e caixa e restaurar os originais?")) {
+                localStorage.clear();
+                location.reload();
+            }
+        }
+
+        // Inicialização Avançada de Gráficos (ChartJS)
+        function inicializarGraficos() {
+            // Destrói gráficos já existentes se for reconstruir
+            if (chartServicosObj) chartServicosObj.destroy();
+            if (chartMesesObj) chartMesesObj.destroy();
+            if (chartReceitaServicoObj) chartReceitaServicoObj.destroy();
+            if (chartDistribuicaoObj) chartDistribuicaoObj.destroy();
+            if (chartEstoqueObj) chartEstoqueObj.destroy();
+
+            // Dados para o Gráfico de Procedimentos Agendados (Volume)
+            const volumeServicos = {};
+            agendamentos.forEach(a => {
+                volumeServicos[a.servico] = (volumeServicos[a.servico] || 0) + 1;
+            });
+            const labelsServicos = Object.keys(volumeServicos);
+            const dataServicos = Object.values(volumeServicos);
+
+            // Dados para Gráfico de Estoque
+            const labelsEstoque = produtos.map(p => p.nome);
+            const dataEstoque = produtos.map(p => p.qtd);
+
+            // Gráfico 1: Dashboard - Volume de Serviços
+            const ctx1 = document.getElementById('chartServicos');
+            if (ctx1) {
+                chartServicosObj = new Chart(ctx1, {
+                    type: 'bar',
+                    data: {
+                        labels: labelsServicos.length > 0 ? labelsServicos : ['Nenhum'],
+                        datasets: [{
+                            label: 'Agendamentos',
+                            data: dataServicos.length > 0 ? dataServicos : [0],
+                            backgroundColor: '#ff1493',
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+            }
+
+            // Gráfico 2: Dashboard - Agendamentos por Mês (Simulado dinamicamente)
+            const ctx2 = document.getElementById('chartMeses');
+            if (ctx2) {
+                chartMesesObj = new Chart(ctx2, {
+                    type: 'line',
+                    data: {
+                        labels: ['Mai', 'Jun', 'Jul'],
+                        datasets: [{
+                            data: [3, 8, agendamentos.length],
+                            borderColor: '#6366f1',
+                            backgroundColor: 'rgba(99, 102, 241, 0.1)',
+                            fill: true,
+                            tension: 0.4
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+            }
+
+            // Gráfico 3: Financeiro - Receita por Serviço
+            const ctx3 = document.getElementById('chartReceitaServico');
+            if (ctx3) {
+                const receitaServicos = {};
+                agendamentos.forEach(a => {
+                    receitaServicos[a.servico] = (receitaServicos[a.servico] || 0) + (a.valor || 0);
+                });
+                
+                chartReceitaServicoObj = new Chart(ctx3, {
+                    type: 'bar',
+                    data: {
+                        labels: Object.keys(receitaServicos).length > 0 ? Object.keys(receitaServicos) : ['Nenhum'],
+                        datasets: [{
+                            label: 'Receita (R$)',
+                            data: Object.values(receitaServicos).length > 0 ? Object.values(receitaServicos) : [0],
+                            backgroundColor: '#10b981',
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+            }
+
+            // Gráfico 4: Financeiro - Distribuição de Receita por tipo de Procedimento
+            const ctx4 = document.getElementById('chartDistribuicao');
+            if (ctx4) {
+                const receitaServicos = {};
+                agendamentos.forEach(a => {
+                    receitaServicos[a.servico] = (receitaServicos[a.servico] || 0) + (a.valor || 0);
+                });
+                
+                chartDistribuicaoObj = new Chart(ctx4, {
+                    type: 'doughnut',
+                    data: {
+                        labels: Object.keys(receitaServicos).length > 0 ? Object.keys(receitaServicos) : ['Nenhum'],
+                        datasets: [{
+                            data: Object.values(receitaServicos).length > 0 ? Object.values(receitaServicos) : [1],
+                            backgroundColor: ['#ff1493', '#10b981', '#6366f1', '#f59e0b', '#ec4899', '#14b8a6']
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                position: 'right',
+                                labels: { color: '#94a3b8', font: { size: 10 } }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Gráfico 5: Estoque - Nível de estoque
+            const ctx5 = document.getElementById('chartEstoque');
+            if (ctx5) {
+                chartEstoqueObj = new Chart(ctx5, {
+                    type: 'bar',
+                    data: {
+                        labels: labelsEstoque.length > 0 ? labelsEstoque : ['Nenhum'],
+                        datasets: [{
+                            label: 'Qtd Estoque',
+                            data: dataEstoque.length > 0 ? dataEstoque : [0],
+                            backgroundColor: '#f59e0b',
+                            borderRadius: 6
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: { legend: { display: false } },
+                        scales: {
+                            y: { grid: { color: '#334155' }, ticks: { color: '#94a3b8' } },
+                            x: { grid: { display: false }, ticks: { color: '#94a3b8' } }
+                        }
+                    }
+                });
+            }
+        }
+    </script>
+</body>
+</html>
